@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Velaris</title>
+     <link rel="icon" href="globe.jpg"width="50">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     body{
+         background: linear-gradient(to right,rgb(243, 179, 189),rgb(132, 247, 132),#9fc0ed);
+    }
+    
+    header{
+        text-align: center;
+    }
+    header h2{
+        position: fixed;
+        top: 0;
+        background-color: rgb(243, 111, 191);
+        padding: 0.5rem;
+        border: 5px solid rgb(248, 8, 224);
+        border-radius: 0 1rem 0 1rem;
+        margin-top: 3rem;
+    }
+    h1{
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    h2{ 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    h3{
+        padding: 0.5rem;
+    }
+    figure{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+    main{
+        text-align: center;
+    }
+    .box{
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 70px;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-left: 2rem;
+    }
+    .images{
+        padding: 1rem;
+        background: linear-gradient(to right,#232526,#434245);
+        color: aliceblue;
+    }
+    .image{
+         display: inline-block;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        
+    }
+    .hotel ul{
+        display: inline-block;
+        margin: 2rem;
+        padding: 1rem;
+        list-style: none;
+        margin-left: 8rem;
+        font-size: 1rem;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    .hotel p{
+        width: 200px;
+    }
+    .hotel h1{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("switerland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+
+.plane{
+    position: absolute;
+    width: 40px;
+
+    animation: flyCurve 6s linear infinite;
+}
+
+
+@keyframes flyCurve{
+    0%{
+        left: 10%;
+        top: 70%;
+    }
+    25%{
+        left: 30%;
+        top: 55%;
+    }
+    50%{
+        left: 50%;
+        top: 40%;
+    }
+    75%{
+        left: 70%;
+        top: 30%;
+    }
+    100%{
+        left: 90%;
+        top: 20%;
+    }
+}
+
+
+.label{
+    position: absolute;
+    font-size: 14px;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+
+.label{
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+.mid2{
+    top:30%;
+    left:70%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+.flight h2{
+    padding: 2rem;
+}
+.flight h1{
+    padding: 1rem;
+}
+.flight a{
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #a4c4f1;
+}
+</style>
+<body>
+    <header>
+    <h1><strong>VELARIS</strong></h1>
+    <h1>Australia</h1>
+     <h2><i>VELARIS</i></h2>
+    <h3>“Stay in Australia – where luxury, comfort, and nature come together perfectly.”</h3>
+    <h3>Best Time to Visit Australia</h3>
+
+<p><b>Best overall time:</b> September – November (Spring) and March – May (Autumn) for pleasant weather and fewer crowds.</p>
+
+<p><b>🌸 Spring (Sep – Nov):</b> Perfect for exploring cities, nature, and outdoor activities.</p>
+
+<p><b>☀️ Summer (Dec – Feb):</b> Best for beaches and surfing, but can be hot and crowded.</p>
+
+<p><b>🍁 Autumn (Mar – May):</b> Cool weather with fewer tourists and great sightseeing experience.</p>
+
+<p><b>❄️ Winter (Jun – Aug):</b> Ideal for visiting northern Australia and enjoying cooler temperatures.</p>
+
+<p><b>Tip:</b> Visit during spring or autumn for the best travel experience.</p>
+    <section class="time">
+    
+</section>
+        <div class="container">
+            <nav>
+                <a href="#hotel">
+         <div class="box">
+            <figure>
+              <img src="hotel.png"width=30px>
+              <figcaption>HOTEL</figcaption>
+              </figure>
+              </a>
+         </div>
+         <a href="#flight">
+         <div class="box">
+              <figure>
+               <img src="flight.webp"width=30px>
+               <figcaption>FLIGHT</figcaption>
+               </figure>
+               </a>
+         </div>
+         </nav>
+         </div>
+          </header>
+         <hr>
+         <main>
+         <div class="images">
+            <div class="image">
+                <figure>
+                    <img src="1_Sydney.jpg" alt="Sydney"width="300px">
+                    <figcaption>Sydney</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="2_Melbourne.jpg" alt="Melbourne"width="300px">
+                    <figcaption>Melbourne</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="3_Great Barrier Reef.jpg" alt="Great Barrier Reef"width="300px">
+                    <figcaption>Great Barrier Reef</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                   <figure>
+                    <img src="4_Gold Coast.jpg" alt="Gold Coast"width="300px">
+                    <figcaption>Gold Coast</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                  <figure>
+                    <img src="5_Uluru.jpg" alt="Uluru"width=300px>
+                    <figcaption>Uluru</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="6_Brisbane.jpg"alt="Brisbane"width="300px">
+                    <figcaption>Brisbane</figcaption>
+                </figure>
+            </div>
+         </div>
+    </main>
+    <hr>
+    <footer>
+       <section id="hotel">
+         <div class="hotel">
+            <h1>HOTELS IN AUSTRALIA</h1>
+          <ul>📍 Sydney
+            <li>🏨 Park Hyatt Sydney – A luxury hotel with stunning views of the Opera House and Harbour.</li>
+            <li>🏨 Shangri-La Sydney – A premium hotel offering beautiful skyline and harbour views.</li>
+            <li>🏨 ibis Sydney Darling Harbour – A comfortable and affordable stay near major attractions.</li>
+          </ul>
+         <ul>📍 Melbourne
+            <li>🏨 The Langham Melbourne – A stylish luxury hotel with riverside views and elegant interiors.</li>
+            <li>🏨 Crown Metropol Melbourne – A modern hotel with great amenities and city access.</li>
+            <li>🏨 ibis Melbourne Central – A budget-friendly hotel in a central location.</li>
+         </ul>
+            <ul>📍 Great Barrier Reef
+                <li>🏨 Lizard Island Resort – An exclusive island resort with breathtaking reef views.</li>
+                <li>🏨 Reef View Hotel – A comfortable hotel with direct access to the reef.</li>
+                <li>🏨 Nomads Cairns Hostel – An affordable stay for travelers exploring the reef.</li>
+            </ul>
+            <ul>📍 Gold Coast
+                <li>🏨 QT Gold Coast – A trendy luxury hotel near the beach with vibrant design.</li>
+                <li>🏨 Novotel Surfers Paradise – A modern hotel located close to the beach and attractions.</li>
+                <li>🏨 Surf Inn Boutique Backpackers – A budget-friendly stay for beach lovers.</li>
+            </ul>
+            <ul>📍 Uluru
+                <li>🏨 Sails in the Desert – A premium desert hotel with cultural experiences and comfort.</li>
+                <li>🏨 Desert Gardens Hotel – A peaceful hotel with views of Uluru.</li>
+                <li>🏨 Outback Pioneer Lodge – A simple and affordable stay in the desert region.</li>
+            </ul>
+              <ul>📍 Brisbane
+                <li>🏨 W Brisbane – A stylish luxury hotel with river views and modern design.</li>
+                <li>🏨 Hilton Brisbane – A premium hotel in the city center with great facilities.</li>
+                <li>🏨 ibis Styles Brisbane Elizabeth Street – A comfortable and affordable stay in a central location.</li>
+              </ul>
+         </div>
+         </section>
+         
+                <div class="flight" id="flight">
+
+<h1>✈️ Flight Route</h1>
+
+<p>India ➡️ Sydney (Australia)</p>
+<p>Route: India → Southeast Asia → Australia</p>
+<p>Duration: 12 – 16 hours</p>
+
+
+    <div class="flight-map">
+        <div class="route"></div>
+
+        <img src="flight.webp" class="plane">
+
+        <div class="label india">India</div>
+        <div class="label mid">Southeast Asia</div>
+        <div class="label swiss">Australia</div>
+       
+    </div>
+     <a href="booking.html">BOOK NOW</a>
+</div>
+
+    </footer>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Velaris</title>
+     <link rel="icon" href="globe.jpg"width="50">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+         background: linear-gradient(to right,rgb(243, 179, 189),rgb(132, 247, 132),#9fc0ed);
+    }
+    
+    header{
+        text-align: center;
+    }
+    header h2{
+        position: fixed;
+        top: 0;
+        background-color: rgb(243, 111, 191);
+        padding: 0.5rem;
+        border: 5px solid rgb(248, 8, 224);
+        border-radius: 0 1rem 0 1rem;
+        margin-top: 3rem;
+    }
+    
+    h2{ 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    h1{
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+    h3{
+        padding: 0.5rem;
+    }
+    figure{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+    main{
+        text-align: center;
+    }
+    .box{
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 70px;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-left: 2rem;
+    }
+    .images{
+        padding: 1rem;
+        background: linear-gradient(to right,#232526,#434245);
+        color: aliceblue;
+    }
+    .image{
+         display: inline-block;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        
+    }
+    .hotel ul{
+        display: inline-block;
+        margin: 2rem;
+        padding: 1rem;
+        list-style: none;
+        margin-left: 8rem;
+        font-size: 1rem;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    .hotel h1{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("switerland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+
+.plane{
+    position: absolute;
+    width: 40px;
+
+    animation: flyCurve 6s linear infinite;
+}
+
+
+@keyframes flyCurve{
+    0%{
+        left: 10%;
+        top: 70%;
+    }
+    25%{
+        left: 30%;
+        top: 55%;
+    }
+    50%{
+        left: 50%;
+        top: 40%;
+    }
+    75%{
+        left: 70%;
+        top: 30%;
+    }
+    100%{
+        left: 90%;
+        top: 20%;
+    }
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+
+.label{
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+.mid2{
+    top:30%;
+    left:70%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+.flight h2{
+    padding: 2rem;
+}
+.flight h1{
+    padding: 1rem;
+}
+.flight a{
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #a4c4f1;
+}
+</style>
+<body>
+    <header>
+    <h1>VELARIS</h1>
+     <h2><i>VELARIS</i></h2>
+    <h1>Japan</h1>
+    <h3>A "winter wonderland" synonymous with alpine perfection, featuring the glacier-shaped Swiss Alps, crystal-clear lakes, and world-class luxury.</h3>
+    <section class="time">
+    <h3>Best Time to Visit Japan</h3>
+
+<p><b>🌸 March – May (Spring):</b> The best time to visit with cherry blossoms (sakura) and pleasant weather.</p>
+
+<p><b>☀️ June – August (Summer):</b> Warm season with festivals, but can be hot and humid.</p>
+
+<p><b>🍁 September – November (Autumn):</b> Beautiful fall colors with cool and comfortable weather.</p>
+
+<p><b>❄️ December – February (Winter):</b> Cold season, best for snow, skiing, and fewer crowds.</p>
+
+</section>
+        <div class="container">
+            <nav>
+                <a href="#hotel">
+         <div class="box">
+            <figure>
+              <img src="hotel.png"width=30px>
+              <figcaption>HOTEL</figcaption>
+              </figure>
+              </a>
+         </div>
+         <a href="#flight">
+         <div class="box">
+              <figure>
+               <img src="flight.webp"width=30px>
+               <figcaption>FLIGHT</figcaption>
+               </figure>
+               </a>
+         </div>
+         </nav>
+         </div>
+          </header>
+         <hr>
+         <main>
+         <div class="images">
+            <div class="image">
+                <figure>
+                    <img src="1_Tokyo.jpg" alt="Tokyo"width="300px">
+                    <figcaption>Tokyo</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="2_kyoto.jpg" alt="Kyoto"width="300px">
+                    <figcaption>Kyoto</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="3_mount fuji.jpg" alt="Mount Fuji"width="300px">
+                    <figcaption>Mount Fuji</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                   <figure>
+                    <img src="4_osaka.jpg" alt="Osaka"width="300px">
+                    <figcaption>Osaka</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                  <figure>
+                    <img src="5_hiroshima.jpg" alt="Hiroshima"width=300px>
+                    <figcaption>Hiroshima</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="6_Nara.jpg"alt="Nara"width="300px">
+                    <figcaption>Nara</figcaption>
+                </figure>
+            </div>
+         </div>
+    </main>
+    <hr>
+    <footer>
+      <section id="hotel">
+         <div class="hotel">
+            <h1>HOTELS IN JAPAN</h1>
+           <ul>📍 Tokyo
+            <li>🏨 Park Hyatt Tokyo – A luxury hotel with stunning skyline views and elegant atmosphere.</li>
+            <li>🏨 Shinjuku Granbell Hotel – A stylish and modern hotel in the heart of the city.</li>
+            <li>🏨 Hotel Sunroute Plaza Shinjuku – A comfortable and affordable stay near major attractions.</li>
+           </ul>
+          <ul>📍 Kyoto
+            <li>🏨 The Ritz-Carlton Kyoto – A peaceful riverside luxury hotel with traditional Japanese design.</li>
+            <li>🏨 Hotel Granvia Kyoto – A convenient hotel located inside Kyoto Station.</li>
+            <li>🏨 Sakura Terrace – A cozy and budget-friendly hotel with modern facilities.</li>
+          </ul>
+           <ul>📍 Mount Fuji
+            <li>🏨 Kozantei Ubuya – A scenic lakeside hotel with breathtaking Mount Fuji views.</li>
+            <li>🏨 Hotel Green Plaza Hakone – A relaxing hot spring hotel with Fuji views.</li>
+            <li>🏨 K's House Fuji View Hostel – A budget-friendly stay with a direct view of Mount Fuji.</li>
+           </ul>
+           <ul>📍 Osaka
+            <li>🏨 The St. Regis Osaka – A premium luxury hotel offering top-class service and comfort.</li>
+            <li>🏨 Hotel Monterey Grasmere Osaka – A stylish hotel with great city access.</li>
+            <li>🏨 Hotel Sunplaza – A simple and affordable stay for travelers.</li>
+           </ul>
+                  <ul>📍 Hiroshima
+                    <li>🏨 Sheraton Grand Hiroshima Hotel – A modern luxury hotel near the train station.</li>
+                    <li>🏨 Hotel Granvia Hiroshima – A convenient and comfortable stay with easy access.</li>
+                    <li>🏨 Santiago Guesthouse Hiroshima – A friendly and affordable guesthouse for travelers.</li>
+                  </ul>
+               <ul>📍 Nara
+                <li>🏨 Nara Hotel – A classic luxury hotel with traditional charm and history.</li>
+                <li>🏨 Hotel Nikko Nara – A modern hotel with great location near attractions.</li>
+                <li>🏨 Super Hotel Lohas Nara – A clean and affordable hotel with basic comforts.</li>
+               </ul>
+         </div>
+         </section>
+         
+                <div class="flight" id="flight">
+    <h1>✈️ Flight Route</h1>
+
+<p><b>Departure:</b> India</p>
+<p><b>Arrival:</b> Tokyo (Japan)</p>
+
+<p><b>Route:</b> India → Southeast Asia / Middle East → Japan</p>
+
+<p><b>Duration:</b> 8 – 12 hours (depending on connecting flight)</p>
+
+    <div class="flight-map">
+        <div class="route"></div>
+
+        <img src="flight.webp" class="plane">
+
+        <div class="label india">India</div>
+        <div class="label mid">Southeast Asia</div>
+        <div class="label swiss">Japan</div>
+       
+    </div>
+     <a href="booking.html">BOOK NOW</a>
+</div>
+
+    </footer>
+</body>
+</html>

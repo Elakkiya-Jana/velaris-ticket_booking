@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Velaris Ticket Booking</title>
+
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+
+body{
+    font-family: Arial;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    padding: 20px;
+}
+
+.container{
+    width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    margin-top: 15px;
+}
+
+input, select{
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: green;
+}
+
+.message{
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    background: #d4edda;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1> Ticket Booking</h1>
+
+<form id="bookingForm">
+
+<h3>Passenger Details</h3>
+
+<input type="text" id="fname" placeholder="First Name">
+<input type="text" id="lname" placeholder="Last Name">
+<input type="date" id="dob">
+
+<h3>Contact Details</h3>
+
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="phone" placeholder="Phone Number">
+
+<h3>Travel Details</h3>
+
+<select id="from">
+<option value="">From</option>
+<option>Chennai</option>
+<option>Delhi</option>
+<option>Mumbai</option>
+</select>
+
+<!-- <select id="to">
+<option value="">To</option>
+<option>Zurich</option>
+<option>Geneva</option>
+</select> -->
+
+<input type="date" id="date">
+
+<h3>Seat Preference</h3>
+
+<select id="seat">
+<option value="">Select Seat</option>
+<option>Window</option>
+<option>Aisle</option>
+<option>Middle</option>
+</select>
+
+<button type="submit">Book Ticket</button>
+
+</form>
+
+<div class="message" id="successMsg">
+<h2>🎉 Ticket Booked Successfully!</h2>
+<p id="details"></p>
+</div>
+
+</div>
+
+<script>
+
+const { jsPDF } = window.jspdf;
+
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let fname = document.getElementById("fname").value;
+    let lname = document.getElementById("lname").value;
+    let dob = document.getElementById("dob").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let from = document.getElementById("from").value;
+    let date = document.getElementById("date").value;
+    let seat = document.getElementById("seat").value;
+
+    if(fname=="" || lname=="" || dob=="" || email=="" || phone=="" || from=="" || date=="" || seat==""){
+        alert("⚠️ Please fill all details!");
+        return;
+    }
+
+    
+    document.getElementById("successMsg").style.display = "block";
+
+    document.getElementById("details").innerHTML =
+    "Passenger: " + fname + " " + lname + "<br>" +
+    "Route: " + from + "<br>" +
+    "Date: " + date + "<br>" +
+    "Seat: " + seat;
+
+    
+    let doc = new jsPDF();
+
+    
+    doc.setFillColor(224, 234, 252);
+    doc.rect(0, 0, 210, 297, "F");
+
+    
+    doc.setFontSize(20);
+    doc.setTextColor(0,0,0);
+    doc.text(" Flight Ticket", 70, 30);
+
+    
+    doc.setFillColor(255,255,255);
+    doc.roundedRect(20, 50, 170, 130, 5, 5, "F");
+
+   
+    doc.setFontSize(12);
+    doc.setTextColor(50,50,50);
+
+    doc.text("Passenger: " + fname + " " + lname, 30, 70);
+    doc.text("DOB: " + dob, 30, 85);
+    doc.text("Email: " + email, 30, 100);
+    doc.text("Phone: " + phone, 30, 115);
+
+    doc.text("From: " + from, 30, 135);
+    
+    doc.text("Travel Date: " + date, 30, 165);
+    doc.text("Seat: " + seat, 30, 180);
+
+    doc.setTextColor(0,100,200);
+    doc.text("Thank you for booking with Velaris ✨", 40, 210);
+
+    
+    doc.save("Velaris_Ticket.pdf");
+
+});
+
+</script>
+
+</body>
+</html>

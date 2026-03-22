@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Velaris</title>
+     <link rel="icon" href="globe.jpg"width="50">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: linear-gradient(to right,rgb(243, 179, 189),rgb(132, 247, 132),#9fc0ed);
+    }
+    header {
+        text-align: center;      
+    }
+    header h2{
+        position: fixed;
+        top: 0;
+        background-color: rgb(243, 111, 191);
+        padding: 0.5rem;
+        border: 5px solid rgb(248, 8, 224);
+        border-radius: 0 1rem 0 1rem;
+        margin-top: 3rem;
+       
+    }
+    h1{
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+       
+    }
+   h3{
+    padding: 1rem;
+   }
+    h2{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    figure{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+    main{
+        text-align: center;
+    }
+    .box{
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 70px;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-left: 2rem;
+    }
+    .images{
+        padding: 1rem;
+        background: linear-gradient(to right,#232526,#434245);
+        color: aliceblue;
+    }
+    .image{
+         display: inline-block;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        
+    }
+    .hotel ul{
+        display: inline-block;
+        margin: 2rem;
+        padding: 1rem;
+        list-style: none;
+        margin-left: 8rem;
+        font-size: 1rem;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    .hotel p{
+        width: 200px;
+    }
+    .hotel h1{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("switerland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+
+.plane{
+    position: absolute;
+    width: 40px;
+    animation: flyCurve 6s linear infinite;
+}
+
+
+@keyframes flyCurve{
+    0%{
+        left: 10%;
+        top: 70%;
+    }
+    25%{
+        left: 30%;
+        top: 55%;
+    }
+    50%{
+        left: 50%;
+        top: 40%;
+    }
+    75%{
+        left: 70%;
+        top: 30%;
+    }
+    100%{
+        left: 90%;
+        top: 20%;
+    }
+}
+
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+
+.label{
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+.mid2{
+    top:30%;
+    left:70%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+.flight h2{
+    padding: 2rem;
+}
+.flight h1{
+    padding: 1rem;
+}
+.flight a{
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #a4c4f1;
+}
+</style>
+<body>
+    <header>
+    <h1><strong>VELARIS</strong></h1>
+    <h1>New Zealand</h1>
+     <h2><i>VELARIS</i></h2>
+    <h3>“Stay in New Zealand – where comfort meets nature in every destination.”</h3>
+    <section class="time">
+    <h3>Best Time to Visit New Zealand</h3>
+
+<p><b>🌸 September – November (Spring):</b> Pleasant weather, blooming flowers, and fewer crowds — perfect for sightseeing.</p>
+
+<p><b>☀️ December – February (Summer):</b> Best time for beaches, outdoor activities, and adventure sports.</p>
+
+<p><b>🍁 March – May (Autumn):</b> Beautiful fall colors with cool and peaceful travel experience.</p>
+
+<p><b>❄️ June – August (Winter):</b> Ideal for snow lovers, skiing, and mountain experiences.</p>
+
+</section>
+        <div class="container">
+            <nav>
+                <a href="#hotel">
+         <div class="box">
+            <figure>
+              <img src="hotel.png"width=30px>
+              <figcaption>HOTEL</figcaption>
+              </figure>
+              </a>
+         </div>
+         <a href="#flight">
+         <div class="box">
+              <figure>
+               <img src="flight.webp"width=30px>
+               <figcaption>FLIGHT</figcaption>
+               </figure>
+               </a>
+         </div>
+         </nav>
+         </div>
+          </header>
+         <hr>
+         <main>
+         <div class="images">
+            <div class="image">
+                <figure>
+                    <img src="1_queenstown.jpg" alt="Queenstown"width="300px">
+                    <figcaption>Queenstown</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="2_Milford Sound.jpg" alt="Milford Sound"width="300px">
+                    <figcaption>Milford Sound</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="3_Auckland.jpg" alt="Auckland"width="300px">
+                    <figcaption>Auckland</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                   <figure>
+                    <img src="4_Rotorua.jpg" alt="Rotorua"width="300px">
+                    <figcaption>Rotorua</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                  <figure>
+                    <img src="5_Mount Cook.jpg" alt="Mount Cook"width=300px>
+                    <figcaption>Mount Cook</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="6_Waitomo Caves.jpg"alt="Waitomo Caves"width="300px">
+                    <figcaption>Waitomo Caves</figcaption>
+                </figure>
+            </div>
+         </div>
+    </main>
+    <hr>
+    <footer>
+       <section id="hotel">
+         <div class="hotel">
+            <h1>HOTELS IN NEW ZEALAND</h1>
+          <ul>📍 Queenstown
+            <li>🏨 Eichardt's Private Hotel – A luxury lakeside hotel with stunning mountain and lake views.</li>
+            <li>🏨 Novotel Queenstown Lakeside – A comfortable hotel located right by Lake Wakatipu.</li>
+            <li>🏨 Nomads Queenstown Hostel – A lively and affordable stay for travelers and backpackers.</li>
+          </ul>
+          <ul>📍 Milford Sound
+            <li>🏨 Milford Sound Lodge – A peaceful lodge surrounded by nature and waterfalls.</li>
+            <li>🏨 Fiordland Lodge – A premium lodge offering scenic views and luxury comfort.</li>
+            <li>🏨Te Anau Lakeview Holiday Park – A simple and budget-friendly stay near the lake.</li>
+          </ul>
+          <ul>📍 Auckland
+            <li>🏨 SkyCity Grand Hotel – A modern luxury hotel in the heart of the city.</li>
+            <li>🏨Cordis Auckland – A stylish hotel with great comfort and facilities.</li>
+            <li>🏨 ibis Budget Auckland Central – An affordable stay in a central location.</li>
+          </ul>
+           <ul>📍 Rotorua
+            <li>🏨 Pullman Rotorua – A premium hotel with modern design and geothermal experiences nearby.</li>
+            <li>🏨 Millennium Hotel Rotorua – A comfortable hotel close to lakes and attractions.</li>
+            <li>🏨 YHA Rotorua – A clean and affordable stay for budget travelers.</li>
+            </ul>
+          <ul>📍 Mount Cook
+            <li>🏨 The Hermitage Hotel – A famous hotel offering direct views of Mount Cook.</li>
+            <li>🏨 Aoraki Court Motel – A comfortable stay with mountain scenery.</li>
+            <li>🏨 YHA Aoraki Mount Cook – A budget-friendly option for nature lovers.</li>
+          </ul>
+               <ul>📍 Waitomo Glowworm Caves
+                <li>🏨 Waitomo Caves Hotel – A historic hotel located close to the famous caves.</li>
+                <li>🏨Abseil Inn – A cozy and comfortable stay for visitors.</li>
+                <li>🏨 Juno Hall Backpackers – A simple and affordable stay for backpackers.</li>
+               </ul>
+         </div>
+         </section>
+         
+                <div class="flight" id="flight">
+    <h1>✈️ Flight Route</h1>
+
+<p><b>Departure:</b> India</p>
+<p><b>Arrival:</b> New Zealand</p>
+
+<p><b>Route:</b> India → Southeast Asia / Middle East → Australia → New Zealand</p>
+
+<p><b>Duration:</b> 16 - 20 hours </p>
+
+    <div class="flight-map">
+        <div class="route"></div>
+
+        <img src="flight.webp" class="plane">
+
+        <div class="label india">India</div>
+        <div class="label mid">Southeast Asia</div>
+        <div class="label mid2">Australia</div>
+        <div class="label swiss">New Zealand</div>
+       
+    </div>
+     <a href="booking.html">BOOK NOW</a>
+</div>
+
+    </footer>
+</body>
+</html>

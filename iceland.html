@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Velaris</title>
+     <link rel="icon" href="globe.jpg"width="50">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+         background: linear-gradient(to right,rgb(243, 179, 189),rgb(132, 247, 132),#9fc0ed);
+    }
+    
+    header{
+        text-align: center;
+       
+    }
+    header h2{
+        position: fixed;
+        top: 0;
+        background-color: rgb(243, 111, 191);
+        padding: 0.5rem;
+        border: 5px solid rgb(248, 8, 224);
+        border-radius: 0 1rem 0 1rem;
+        margin-top: 3rem;
+    }
+    
+    h2{ 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    h3{
+        padding: 0.5rem;
+    }
+    header h1{
+        padding: 0.5rem;
+        font-size: 3rem;
+    }
+    figure{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+    main{
+        text-align: center;
+    }
+    .box{
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 70px;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-left: 2rem;
+    }
+    .images{
+        padding: 1rem;
+        background: linear-gradient(to right,#232526,#434245);
+        color: aliceblue;
+    }
+    .image{
+         display: inline-block;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        
+    }
+    .hotel ul{
+        display: inline-block;
+        margin: 2rem;
+        padding: 1rem;
+        list-style: none;
+        margin-left: 8rem;
+        font-size: 1rem;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    .hotel p{
+        width: 200px;
+    }
+    .hotel h1{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+ 
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("switerland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+
+.plane{
+    position: absolute;
+    width: 40px;
+
+    animation: flyCurve 6s linear infinite;
+}
+
+
+@keyframes flyCurve{
+    0%{
+        left: 10%;
+        top: 70%;
+    }
+    25%{
+        left: 30%;
+        top: 55%;
+    }
+    50%{
+        left: 50%;
+        top: 40%;
+    }
+    75%{
+        left: 70%;
+        top: 30%;
+    }
+    100%{
+        left: 90%;
+        top: 20%;
+    }
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+
+.label{
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+.mid2{
+    top:30%;
+    left:70%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+.flight h2{
+    padding: 2rem;
+}
+.flight h1{
+    padding: 1rem;
+}
+.flight a{
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #a4c4f1;
+}
+</style>
+<body>
+    <header>
+    <h1>VELARIS</h1>
+    <h1>Iceland</h1>
+    <h2><i>VELARIS</i></h2>
+<h3>A land of fire and ice, where volcanoes, glaciers, waterfalls, and northern lights create a magical travel experience.</h3>
+    <section class="time">
+  <h3>Best Time to Visit</h3>
+
+<p>☀️ Summer (June – August): Midnight sun and easy travel</p>
+<p>❄️ Winter (November – March): Northern Lights and snow</p>
+<p>🌸 Spring/Autumn: Fewer crowds and beautiful landscapes</p>
+            
+
+</section>
+        <div class="container">
+            <nav>
+                <a href="#hotel">
+         <div class="box">
+            <figure>
+              <img src="hotel.png"width=30px>
+              <figcaption>HOTEL</figcaption>
+              </figure>
+              </a>
+         </div>
+         <a href="#flight">
+         <div class="box">
+              <figure>
+               <img src="flight.webp"width=30px>
+               <figcaption>FLIGHT</figcaption>
+               </figure>
+               </a>
+         </div>
+         </nav>
+         </div>
+          </header>
+         <hr>
+         <main>
+         <div class="images">
+            <div class="image">
+                <figure>
+                    <img src="Reykjavik.jpg" alt="Reykjavik"width="300px">
+                    <figcaption>Reykjavik</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="Golden Circle.jpg" alt="Golden Circle"width="300px">
+                    <figcaption>Golden Circle</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="3_Blue Lagoon.jpg" alt="Blue Lagoon"width="300px">
+                    <figcaption>Blue Lagoon</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                   <figure>
+                    <img src="4_Vatnajökull.jpg" alt="Vatnajökull"width="300px">
+                    <figcaption>Vatnajökull</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                  <figure>
+                    <img src="5_Skógafoss.jpg" alt="Skógafoss"width=300px>
+                    <figcaption>Skogafoss</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="6_Reynisfjara Beach .jpg"alt="6_Reynisfjara Beach"width="300px">
+                    <figcaption>Reynisfjara Beach</figcaption>
+                </figure>
+            </div>
+         </div>
+    </main>
+    <hr>
+    <footer>
+       <section id="hotel">
+         <div class="hotel">
+           <h1>HOTELS IN ICELAND</h1>
+
+<ul>📍 Reykjavik<br>
+<p>Stay in the capital for easy access to culture, nightlife, and city attractions.</p>
+<li>🏨 The Reykjavik EDITION – Luxury stay</li>
+<li>🏨 Center Hotels Plaza – Premium comfort</li>
+<li>🏨 Kex Hostel – Budget stay</li>
+</ul>
+
+<ul>📍 Golden Circle<br>
+<p>Perfect for exploring Iceland’s most famous natural attractions.</p>
+<li>🏨 Hotel Geysir – Luxury stay</li>
+<li>🏨 Litli Geysir Hotel – Comfortable stay</li>
+<li>🏨 Guesthouse Fludir – Budget stay</li>
+</ul>
+
+<ul>📍 Blue Lagoon<br>
+<p>Stay near this iconic geothermal spa for a relaxing experience.</p>
+<li>🏨 The Retreat at Blue Lagoon – Luxury stay</li>
+<li>🏨 Silica Hotel – Premium comfort</li>
+<li>🏨 Northern Light Inn – Budget stay</li>
+</ul>
+
+<ul>📍 Vatnajökull<br>
+<p>Best for glacier views and ice cave exploration.</p>
+<li>🏨 Fosshotel Glacier Lagoon – Luxury stay</li>
+<li>🏨 Hotel Skaftafell – Mid-range stay</li>
+<li>🏨 Guesthouse Gerdi – Budget stay</li>
+</ul>
+
+<ul>📍 Skógafoss<br>
+<p>Wake up near one of Iceland’s most famous waterfalls.</p>
+<li>🏨 Hotel Skogafoss – Scenic stay</li>
+<li>🏨 Hotel Drangshlid – Comfortable stay</li>
+<li>🏨 Guesthouse Skogar – Budget stay</li>
+</ul>
+
+<ul>📍 Reynisfjara Beach<br>
+<p>A stunning black sand beach with unique rock formations.</p>
+<li>🏨 Black Beach Suites – Luxury sta</li>
+<li>🏨 Hótel Kría – Premium comfort </li>
+<li>🏨 The Barn – Budget stay </li>
+</ul>
+         </div>
+         </section>
+         
+                <div class="flight" id="flight">
+    <h1>✈️ Flight Route</h1>
+    <h2>Chennai ➡️ Middle East ➡️ Ice land</h2>
+     <h1>FLIGHT ROUTE</h1>
+
+<p><b>Departure:</b> Chennai, India</p>
+<p><b>Arrival:</b> Reykjavik, Iceland</p>
+<p><b>Duration:</b> 12–15 hours</p>
+<p><b>Route:</b> India → Middle East → Europe → Iceland</p>
+    <div class="flight-map">
+        <div class="route"></div>
+
+        <img src="flight.webp" class="plane">
+
+        <div class="label india">India</div>
+        <div class="label mid">Middle East</div>
+        <div class="label mid2">Europe</div>
+        <div class="label swiss">Iceland</div>
+       
+    </div>
+     <a href="booking.html">BOOK NOW</a>
+</div>
+
+    </footer>
+</body>
+</html>

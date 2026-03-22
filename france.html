@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Velaris</title>
+     <link rel="icon" href="globe.jpg"width="50">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+         background: linear-gradient(to right,rgb(243, 179, 189),rgb(132, 247, 132),#9fc0ed);
+    }
+    
+    header{
+        text-align: center;
+        padding: 1rem;
+    }
+    header h2{
+        position: fixed;
+        top: 0;
+        background-color: rgb(243, 111, 191);
+        padding: 0.5rem;
+        border: 5px solid rgb(248, 8, 224);
+        border-radius: 0 1rem 0 1rem;
+        margin-top: 3rem;
+    }
+    
+    h2{ 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    header h1{
+        padding: 0.5rem;
+        font-size: 3rem;
+    }
+    figure{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+    main{
+        text-align: center;
+    }
+    .box{
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 70px;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-left: 2rem;
+    }
+    .images{
+        padding: 1rem;
+        background: linear-gradient(to right,#232526,#434245);
+        color: aliceblue;
+    }
+    .image{
+         display: inline-block;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        
+    }
+    .hotel ul{
+        display: inline-block;
+        margin: 2rem;
+        padding: 1rem;
+        list-style: none;
+        margin-left: 8rem;
+        font-size: 1rem;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .hotel p{
+        width: 200px;
+    }
+    .hotel h1{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .flight{
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("switerland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+
+.plane{
+    position: absolute;
+    width: 40px;
+
+    animation: flyCurve 6s linear infinite;
+}
+
+
+@keyframes flyCurve{
+    0%{
+        left: 10%;
+        top: 70%;
+    }
+    25%{
+        left: 30%;
+        top: 55%;
+    }
+    50%{
+        left: 50%;
+        top: 40%;
+    }
+    75%{
+        left: 70%;
+        top: 30%;
+    }
+    100%{
+        left: 90%;
+        top: 20%;
+    }
+}
+
+
+.label{
+    position: absolute;
+    font-size: 14px;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+
+.label{
+    position: absolute;
+    font-size: 14px;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+.mid2{
+    top:30%;
+    left:70%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+.flight h2{
+    padding: 2rem;
+}
+.flight h1{
+    padding: 1rem;
+}
+.flight a{
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #a4c4f1;
+}
+
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("switerland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+
+.plane{
+    position: absolute;
+    width: 40px;
+
+    animation: flyCurve 6s linear infinite;
+}
+
+
+@keyframes flyCurve{
+    0%{
+        left: 10%;
+        top: 70%;
+    }
+    25%{
+        left: 30%;
+        top: 55%;
+    }
+    50%{
+        left: 50%;
+        top: 40%;
+    }
+    75%{
+        left: 70%;
+        top: 30%;
+    }
+    100%{
+        left: 90%;
+        top: 20%;
+    }
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+
+.label{
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+.mid2{
+    top:30%;
+    left:70%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+</style>
+<body>
+      <header>
+        <h1>VELARIS</h1>
+        <h1>FRANCE</h1>
+        <h2><i>VELARIS</i></h2>
+        <h3>France is a land of timeless elegance, known for its romantic cities, world-class art, iconic landmarks like the Eiffel Tower, and exquisite cuisine.</h3>
+    <section class="time">
+  <h3>Best Time to Visit France</h3>
+
+<p><b>🌸 April – June (Spring):</b> The best time with pleasant weather, blooming flowers, and perfect sightseeing in Paris, Loire Valley, and Riviera.</p>
+
+<p><b>☀️ July – August (Summer):</b> Great for beaches in the French Riviera and outdoor festivals, but crowded and expensive.</p>
+
+<p><b>🍁 September – October (Autumn):</b> Fewer tourists, mild weather, and beautiful landscapes — ideal for relaxed travel.</p>
+
+<p><b>❄️ November – March (Winter):</b> Cold season, best for budget travel and enjoying Christmas markets and snow in some regions.</p>
+</section>
+        <div class="container">
+            <nav>
+                <a href="#hotel">
+         <div class="box">
+            <figure>
+              <img src="hotel.png"width=30px>
+              <figcaption>HOTEL</figcaption>
+              </figure>
+              </a>
+         </div>
+         <a href="#flight">
+         <div class="box">
+              <figure>
+               <img src="flight.webp"width=30px>
+               <figcaption>FLIGHT</figcaption>
+               </figure>
+               </a>
+         </div>
+         </nav>
+         </div>
+          </header>
+         <hr>
+         <main>
+         <div class="images">
+            <div class="image">
+                <figure>
+                    <img src="france_eiffle.jpg" alt="Eiffle Tower"width="300px">
+                    <figcaption>Effile Tower</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="france_louvre.jpg" alt="Loure Museum"width="300px">
+                    <figcaption>Loure Museum</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="France_palace.jpg" alt="Palace"width="300px">
+                    <figcaption>Palace of Versailles</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                   <figure>
+                    <img src="france_saint-michel.jpg" alt="france_saint-michel"width="300px">
+                    <figcaption>Mont Saint-Michel</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                  <figure>
+                    <img src="france_riviera.jpg" alt="Skógafoss"width=300px>
+                    <figcaption>Skogafoss</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="france_loire.jpg"alt="Loire Valley"width="300px">
+                    <figcaption>Reynisfjara Beach</figcaption>
+                </figure>
+            </div>
+         </div>
+    </main>
+    <hr>
+    <footer>
+       <section id="hotel">
+         <div class="hotel">
+           <h1>HOTELS IN FRANCE</h1>
+
+<ul>📍 Eiffel Tower (Paris)
+    <li>🏨 Shangri-La Hotel Paris – A luxury hotel with stunning Eiffel Tower views and royal-style interiors.</li>
+    <li>🏨 Pullman Paris Tour Eiffel – A modern hotel located just steps away from the Eiffel Tower.</li>
+    <li>🏨 ibis Paris Tour Eiffel – A comfortable and affordable stay close to major attractions.</li>
+</ul>
+<ul>📍 Louvre Museum (Paris)
+    <li>🏨 Hotel du Louvre – A premium hotel located right next to the Louvre Museum.</li>
+    <li>🏨 Le Meurice – A luxurious palace-style hotel with elegant decor.</li>
+    <li>🏨 Timhotel Le Louvre – A budget-friendly hotel in the heart of Paris.</li>
+</ul>
+
+<ul>📍 Palace of Versailles (Versailles)
+    <li>🏨 Waldorf Astoria Versailles - Trianon Palace – A grand luxury hotel located near the palace gardens.</li>
+    <li>🏨 Hotel Le Versailles – A comfortable stay just minutes from Versailles Palace.</li>
+    <li>🏨 ibis Versailles Château – A simple and affordable hotel close to the palace.</li>
+</ul>
+
+<ul>📍 Mont Saint-Michel (Normandy)
+    <li>🏨 La Mère Poulard – A historic hotel located on the island with classic charm.</li>
+    <li>🏨 Le Relais Saint Michel – A scenic hotel with amazing views of the island.</li>
+    <li>🏨 Auberge Saint Pierre – A cozy boutique hotel with traditional style.</li>
+</ul>
+
+<ul>📍 French Riviera (Côte d'Azur)
+    <li>🏨 Hotel Negresco – A famous luxury hotel with historic design and sea views.</li>
+    <li>🏨 Hyatt Regency Nice Palais de la Méditerranée – A stylish beachfront hotel with modern comfort.</li>
+    <li>🏨 Ibis Budget Nice Aeroport – A simple and affordable hotel near the airport.</li>
+</ul>
+
+<ul>📍 Loire Valley
+    <li>🏨 Château de Marcay – A unique castle hotel offering a royal experience.</li>
+    <li>🏨 Domaine des Hauts de Loire – A peaceful luxury retreat surrounded by nature.</li>
+    <li>🏨 Ibis Tours Centre Gare – A comfortable budget stay in the Loire Valley region.</li>
+</ul>
+         </div>
+         </section>
+         <footer>
+            <div class="flight" id="flight">
+    <h1>✈️ Flight Route</h1>
+    <h2>India ➡️ France</h2>
+    <p><b>Departure:</b> India</p>
+<p><b>Arrival:</b> Paris,France</p>
+<p><b>Duration:</b> 10–12 hours</p>
+<p><b>Route:</b> India → France</p>
+
+    <div class="flight-map">
+        <div class="route"></div>
+
+        <img src="flight.webp" class="plane">
+
+        <div class="label india">India</div>
+        <div class="label swiss">France</div>
+       
+    </div>
+     <a href="booking.html">BOOK NOW</a>
+</div>
+
+            </footer>
+        </body>
+ </html>

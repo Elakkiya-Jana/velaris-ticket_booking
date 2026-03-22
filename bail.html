@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Velaris</title>
+     <link rel="icon" href="globe.jpg"width="50">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: linear-gradient(to right,rgb(243, 179, 189),rgb(132, 247, 132),#9fc0ed);
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    header h2{
+        position: fixed;
+        top: 0;
+        background-color: rgb(243, 111, 191);
+        padding: 0.5rem;
+        border: 5px solid rgb(248, 8, 224);
+        border-radius: 0 1rem 0 1rem;
+        margin-top: 3rem;
+       
+    }
+    h3{
+        padding: 0.5rem;
+    }
+    
+    h2{ 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    figure{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+    main{
+        text-align: center;
+    }
+    .box{
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 70px;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-left: 2rem;
+    }
+    .images{
+        padding: 1rem;
+        background: linear-gradient(to right,#232526,#434245);
+        color: aliceblue;
+    }
+    .image{
+         display: inline-block;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        
+    }
+    .hotel ul{
+        display: inline-block;
+        margin: 2rem;
+        padding: 1rem;
+        list-style: none;
+        margin-left: 8rem;
+        font-size: 1rem;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    .hotel p{
+        width: 200px;
+    }
+    .hotel h1{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+ 
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("switerland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+
+.plane{
+    position: absolute;
+    width: 40px;
+
+    animation: flyCurve 6s linear infinite;
+}
+
+
+@keyframes flyCurve{
+    0%{
+        left: 10%;
+        top: 70%;
+    }
+    25%{
+        left: 30%;
+        top: 55%;
+    }
+    50%{
+        left: 50%;
+        top: 40%;
+    }
+    75%{
+        left: 70%;
+        top: 30%;
+    }
+    100%{
+        left: 90%;
+        top: 20%;
+    }
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+
+.label{
+    position: absolute;
+    font-size: 2rem;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+.flight h2{
+    padding: 2rem;
+}
+.flight h1{
+    padding: 1rem;
+}
+.flight a{
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #a4c4f1;
+}
+</style>
+<body>
+    <header>
+    <h1>VELARIS</h1>
+    <h1>Bali</h1>
+     <h2><i>VELARIS</i></h2>
+    <h3>A "winter wonderland" synonymous with alpine perfection, featuring the glacier-shaped Swiss Alps, crystal-clear lakes, and world-class luxury.</h3>
+    <section class="time">
+<h3>Best Time to Visit</h3>
+
+<p>🌸 Spring (April – June): Pleasant weather and blooming landscapes</p>
+<p>☀️ Summer (June – October): Best for travel and outdoor activities</p>
+<p>❄️ Winter (November– March): Snow, skiing, and winter wonderland</p>
+
+</section>
+        <div class="container">
+            <nav>
+                <a href="#hotel">
+         <div class="box">
+            <figure>
+              <img src="hotel.png"width=30px>
+              <figcaption>HOTEL</figcaption>
+              </figure>
+              </a>
+         </div>
+         <a href="#flight">
+         <div class="box">
+              <figure>
+               <img src="flight.webp"width=30px>
+               <figcaption>FLIGHT</figcaption>
+               </figure>
+               </a>
+         </div>
+         </nav>
+         </div>
+          </header>
+         <hr>
+         <main>
+         <div class="images">
+            <div class="image">
+                <figure>
+                    <img src="1.Ubud.html.jpeg" alt="Ubud"width="300px">
+                    <figcaption>Ubud</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="2_Uluwatu Temple.html.jpeg " alt="Uluwatu Temple"width="300px">
+                    <figcaption>Uluwatu Temple</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="3_Kuta Beach.html.jpeg" alt="Kuta Beach"width="300px">
+                    <figcaption>Kuta Beach</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                   <figure>
+                    <img src="4_Mount Batur.htm.jpeg" alt="Mount Batur"width="300px">
+                    <figcaption>Mount Batur</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                  <figure>
+                    <img src="5_Tegenungan Waterfall.html.jpeg" alt="Tegenungan Waterfall"width=300px>
+                    <figcaption>Tegenungan Waterfall</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="6_Tegallalang Rice Terraces.html.jpeg"alt="Tegallalang Rice Terraces"width="300px">
+                    <figcaption>Tegallalang Rice Terraces</figcaption>
+                </figure>
+            </div>
+         </div>
+    </main>
+    <hr>
+    <footer>
+       <section id="hotel">
+         <div class="hotel">
+            <h1>HOTELS IN BALI</h1>
+           <ul>📍 Ubud<br>
+            <p>Book a hotel in peaceful town in Bali known for its lush rice terraces, traditional arts, and spiritual atmosphere.</p>
+            <li>🏨 Viceroy Bali – Luxury stay</li>
+            <li>🏨 COMO Shambhala Estate – Premium comfort</li>
+            <li>🏨 Four Seasons Resort Bali– Historic stay</li>
+           </ul>
+           <ul>📍 Uluwatu Temple<br>
+            <p>Book a hotel in famous sea temple in Bali, perched on a high cliff and known for its breathtaking sunset views.</p>
+             <li>🏨 Bvlgari Resort Bali – Luxury stay</li>
+            <li>🏨 Alila Vilas Uluwatu – Premium comfort</li>
+             <li>🏨 Anantara Uluwatu Bali Resort – Budget stay</i>
+            </ul>
+            <ul>📍 Kuta Beach<br>
+                <p>Book a hotel in popular Bali destination known for its golden sands, beginner-friendly surfing waves, and vibrant nightlife.</p>
+             <li>🏨 Sheraton Bali Kuta Resort – Luxury stay</li>
+             <li>🏨 Hard Rock Hotel Bali –premium comfort</li>
+              <li>🏨 The Anvaya Beach Resort Bali – Budget stay</li>
+            </ul>
+            <ul>📍 Mount Batur<br>
+                <p>While you can't stay on the peak, book a hotel in nearby Wengen or Grindelwald for early-morning access to the "Top of Europe" before the crowds arrive.</p>
+                
+                <li>📍Lake Batur <br>
+                     🏨 Toya Devasya Hot Spring Wellness Resort – Scenic mountain stay
+                   </li>
+               <li>📍 Kintamani<br>
+                     🏨 Lakeview Hotel & Restaurant – Budget + mountain view
+                   </li>
+                <li>📍 Cave-Style<br>
+                     🏨The Cave Hotel Bali – Comfortable stay
+                    </li>
+                </ul>
+                <ul>
+                   📍 Tegenungan Waterfall<br>
+                   <p>Book a room in this valley to wake up to the sound of waterfalls crashing down limestone cliffs right outside your window.</p>
+                    <li>🏨 The Wakanda A Pramana Experience – Luxury stay</li>
+                     <li>🏨 The Alena Resort A Pramana Expereince  – Premium comfort</li>
+                     <li>🏨 Sthala,A Tribute Portfolio Hotel,Ubud Bali– Budget stay</li>
+                </ul>
+                <ul>📍 Tegallalang Rice Terraces<br>
+                    <p>Book a hotel in Bali famous for their lush green views and traditional Balinese irrigation system.</p>
+                    <li>🏨 The Kayon Jungle Resort – Scenic stay</li>
+                    <li>🏨 K Club Ubud – Premium comfort</li>
+                    <li>🏨 Inara Alas Harum – Budget stay</li>
+                </ul>
+         </div>
+         </section>
+         
+                <div class="flight" id="flight">
+    <h1>✈️ Flight Route</h1>
+    <h2>India ➡️ Bangkok ➡️ Bali</h2>
+    <p><b>Departure:</b> Chennai, India</p>
+<p><b>Arrival:</b> Kuala Lumpur, Bali</p>
+<p><b>Duration:</b> 10–15 hours</p>
+<p><b>Route:</b> India → Transit City → Kuala Lumpur → Bali</p>
+
+    <div class="flight-map">
+        <div class="route"></div>
+
+        <img src="flight.webp" class="plane">
+
+        <div class="label india">India</div>
+        <div class="label mid">Kuala Lumpur</div>
+        <div class="label swiss">Bali</div>
+       
+    </div>
+     <a href="booking.html">BOOK NOW</a>
+</div>
+
+    </footer>
+</body>
+</html>

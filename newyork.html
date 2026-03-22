@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Velaris</title>
+     <link rel="icon" href="globe.jpg"width="50">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: linear-gradient(to right,rgb(243, 179, 189),rgb(132, 247, 132),#9fc0ed);
+    }
+    
+    header{
+        text-align: center;
+    }
+    header h2{
+        position: fixed;
+        top: 0;
+        background-color: rgb(243, 111, 191);
+        padding: 0.5rem;
+        border: 5px solid rgb(248, 8, 224);
+        border-radius: 0 1rem 0 1rem;
+        margin-top: 3rem;
+    }
+    h1{
+        padding: 1rem;
+    }
+    
+    h2{ 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    h3{
+        padding: 0.5rem;
+    }
+    figure{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+    main{
+        text-align: center;
+    }
+    .box{
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 70px;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-left: 2rem;
+    }
+    .images{
+        padding: 1rem;
+        background: linear-gradient(to right,#232526,#434245);
+        color: aliceblue;
+    }
+    .image{
+         display: inline-block;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        
+    }
+    .hotel ul{
+        display: inline-block;
+        margin: 2rem;
+        list-style: none;
+        margin-left: 8rem;
+        font-size: 1rem;    
+    }
+    a{
+        text-decoration: none;
+    }
+    .hotel p{
+        width: 200px;
+    }
+    .hotel h1{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("switerland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+
+.plane{
+    position: absolute;
+    width: 40px;
+
+    animation: flyCurve 6s linear infinite;
+}
+
+
+@keyframes flyCurve{
+    0%{
+        left: 10%;
+        top: 70%;
+    }
+    25%{
+        left: 30%;
+        top: 55%;
+    }
+    50%{
+        left: 50%;
+        top: 40%;
+    }
+    75%{
+        left: 70%;
+        top: 30%;
+    }
+    100%{
+        left: 90%;
+        top: 20%;
+    }
+}
+
+
+.label{
+    position: absolute;
+    font-size: 14px;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+
+.label{
+    position: absolute;
+    font-size: 14px;
+    font-size: 2rem;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+.flight h2{
+    padding: 2rem;
+}
+.flight h1{
+    padding: 1rem;
+}
+.flight a{
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #a4c4f1;
+}
+
+</style>
+<body>
+    <header>
+    <h1><strong>VELARIS</strong></h1>
+    <h1>New York</h1>
+     <h2><i>VELARIS</i></h2>
+    <h3>“Explore New York – where iconic landmarks, culture, and city life create unforgettable experiences.”</h3>
+    <section class="time">
+    <h3>Best Time to Visit New York</h3>
+
+<p><b>🌸 April – June:</b> Pleasant weather and perfect for sightseeing.</p>
+<p><b>☀️ July – August:</b> Warm with events but crowded.</p>
+<p><b>🍁 September – November:</b> Beautiful fall colors and cool weather.</p>
+<p><b>❄️ December – February:</b> Winter with snow and festive vibes.</p>
+
+</section>
+        <div class="container">
+            <nav>
+                <a href="#hotel">
+         <div class="box">
+            <figure>
+              <img src="hotel.png"width=30px>
+              <figcaption>HOTEL</figcaption>
+              </figure>
+              </a>
+         </div>
+         <a href="#flight">
+         <div class="box">
+              <figure>
+               <img src="flight.webp"width=30px>
+               <figcaption>FLIGHT</figcaption>
+               </figure>
+               </a>
+         </div>
+         </nav>
+         </div>
+          </header>
+         <hr>
+         <main>
+         <div class="images">
+            <div class="image">
+                <figure>
+                    <img src="Statue of Liberty.jpg" alt="Statue of Liberty"width="300px">
+                    <figcaption>Statue of Liberty</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="2_Times Square.jpg" alt="Times Square"width="300px">
+                    <figcaption>Times Square</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="3_Central Park.jpg" alt="Central Park"width="300px">
+                    <figcaption>Central Park</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                  <figure>
+                    <img src="4_Empire State Building.jpg" alt=" Empire State Building"width=300px>
+                    <figcaption> Empire State Building</figcaption>
+                </figure>
+            </div>
+             <div class="image">
+                   <figure>
+                    <img src="5_Brooklyn Bridge.jpg" alt="Brooklyn Bridge"width="300px">
+                    <figcaption>Brooklyn Bridge</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="6_Fifth Avenue.jpg"alt="Fifth Avenue"width="300px">
+                    <figcaption>Fifth Avenue</figcaption>
+                </figure>
+            </div>
+         </div>
+    </main>
+    <hr>
+    <footer>
+       <section id="hotel">
+         <div class="hotel">
+            <h1>HOTELS IN NEW YORK</h1>
+          <ul>📍 Statue of Liberty
+            <li>🏨 The Wagner Hotel – A luxury hotel with views of the harbor and Statue of Liberty.</li>
+            <li>🏨 Hilton Garden Inn NYC Financial Center – A comfortable stay close to major attractions.</li>
+            <li>🏨 The Jane Hotel – A unique and affordable historic hotel.</li>
+          </ul>
+         <ul>📍 Times Square
+            <li>🏨 The Times Square EDITION – A stylish luxury hotel in the heart of Times Square.</li>
+            <li>🏨 Marriott Marquis – A premium hotel with great city views.</li>
+            <li>🏨 Pod Times Square – A modern and affordable stay near Times Square.</li>
+         </ul>
+         <ul>📍 Central Park
+            <li>🏨 The Plaza Hotel – A world-famous luxury hotel near Central Park.</li>
+            <li>🏨 Park Lane Hotel – A comfortable hotel with park views.</li>
+            <li>🏨 HI NYC Hostel – A budget-friendly stay for travelers.</li>
+         </ul>
+          <ul>📍 Empire State Building
+            <li>🏨 Arlo NoMad – A trendy hotel with rooftop views.</li>
+            <li>🏨 The Langham New York – A premium hotel with elegant rooms.</li>
+            <li>🏨 Hotel 31 – A simple and affordable stay.</li>
+          </ul>
+         <ul>📍 Brooklyn Bridge
+            <li>🏨 1 Hotel Brooklyn Bridge – A modern eco-luxury hotel with skyline views.</li>
+            <li>🏨 New York Marriott at the Brooklyn Bridge – A premium stay with great facilities.</li>
+            <li>🏨 Pod Brooklyn – A stylish and affordable hotel.</li>
+         </ul>
+               <ul>📍 Fifth Avenue
+                <li>🏨 The St. Regis New York – A classic luxury hotel with top-class service.</li>
+                <li>🏨 Lotte New York Palace – A grand hotel with historic charm.</li>
+                <li>🏨 The Roosevelt Hotel – A comfortable and affordable stay.</li>
+               </ul>
+         </div>
+         </section>
+         
+                <div class="flight" id="flight">
+    <h1>✈️ Flight Route</h1>
+        <p>Chennai ➡️ New York (USA)</p>
+        <p>Route: India → Europe / Middle East → USA</p>
+        <p>Duration: 18 – 22 hours</p>    
+
+    <div class="flight-map">
+        <div class="route"></div>
+
+        <img src="flight.webp" class="plane">
+
+        <div class="label india">India</div>
+        <div class="label mid">Europe</div>
+        <div class="label swiss">USA</div>
+       
+    </div>
+     <a href="booking.html">BOOK NOW</a>
+</div>
+
+    </footer>
+</body>
+</html>
+ 
+

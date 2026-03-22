@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Velaris</title>
+    <link rel="icon" href="globe.jpg"width="50">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: linear-gradient(to right,rgb(198, 83, 83),rgb(249, 249, 103),rgb(84, 204, 241));
+    }
+    header h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5rem;
+        padding: 1rem;
+
+    }
+    header p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+    }
+    .container img{
+        display: flex;
+        gap: 1;
+        width: 200px;
+        text-align: center;
+        padding-left: 3rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+    .container .box:nth-child(odd){
+      
+       background:linear-gradient(rgb(227, 104, 125),white)
+    }
+    figure{
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+    .box{
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 2rem;
+        box-shadow: 5px 5px 10px rgb(30, 28, 28);
+        width: 300px;
+        padding: 1rem;
+        margin-top: 3rem;
+        margin-left: rem;
+        margin-left: 1rem;
+        background:linear-gradient(rgba(57, 57, 255, 0.985),white);
+      
+    }
+    .container{
+        padding: 2rem;
+        text-align: center;
+    }
+    h2{
+        position: fixed;
+        top: 0;
+        background-color: rgb(243, 111, 191);
+        padding: 0.5rem;
+        border: 5px solid rgb(248, 8, 224);
+        border-radius: 0 1rem 0 1rem;
+        margin-top: 3rem;
+
+    }
+   .animation{
+    width: 50px;
+    position: absolute;
+    top:20%;
+    left:-200px;
+    
+    animation: fly 4s linear 1;
+   }
+   @keyframes fly{
+    0%{
+        left:-200px;
+        top: 80%;
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        left:100%;
+        transform: translateY(0);
+
+    }
+    }
+    footer{
+        text-align: center;
+        margin: 2rem;
+    }
+    a{
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        background:linear-gradient(rgb(121, 233, 138),rgb(96, 206, 214));
+        color: black;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin: 2rem;
+        animation: blinkAnim 1s infinite;
+    }
+    @keyframes blinkAnim{
+        0%{opacity: 1;}
+        50%{opacity: 0.5;}
+        100%{opacity: 1;}
+    }
+    footer h3{
+        padding: 1rem;
+    }
+
+</style>
+<body>
+    <header>
+         <h1><i>VELARIS</i></h1>
+         <div class="animation">
+         <img src="flight.webp" alt="flight"width="50px">
+         </div>
+        <p>Velaris is a premier digital gateway designed to bridge the gap between people and the experiences that move them. Our platform redefines the art of attendance by offering a seamless, intuitive booking journey that prioritizes speed, security, and elegance. Whether it’s the roar of a stadium or the hushed anticipation of a theater, Velaris ensures that your journey begins long before the lights go up. We are committed to transforming the logistics of ticketing into a sophisticated, stress-free ritual for every enthusiast. By blending cutting-edge technology with a passion for live events, Velaris serves as more than just a portal—it is your front-row seat to the world’s most unforgettable</p>
+          </header>
+           <main>
+            <h2><i>VELARIS</i></h2>
+            <div class="container">
+         <p><b>​"The Memories We’ve Made"</b><br>
+<em>Join thousands of explorers and fans who have already stepped through our gates.<br> front-row seats to hidden getaways, see where our community has been lately."</em></p>
+         <div class="box">
+            <figure>
+                <img src="france_page.jpg" alt="france">
+                <figcaption>France</figcaption>
+            </figure>
+            <p>The world’s most visited country, famous for Parisian romance, iconic landmarks, and world-class gastronomy.</p>
+         </div>
+         <div class="box">
+            <figure>
+                <img src="Newzealand_page.jpg" alt="newzealabd">
+                <figcaption>New Zealand</figcaption>
+            </figure>
+            <p>A breathtaking "adventure capital" renowned for its pristine wilderness, dramatic fjords, and legendary Lord of the Rings landscapes.</p>
+         </div>
+         <div class="box">
+            <figure>
+                <img src="italy_page.jpg" alt="italy">
+                <figcaption>Italy</figcaption>
+            </figure>
+            <p>An artistic masterpiece home to the most UNESCO World Heritage sites, legendary Roman history, and unparalleled cuisine.</p>
+         </div>
+         <div class="box">
+            <figure>
+                <img src="switzerland_page.jpg" alt="switzerland">
+                <figcaption>Switzerland</figcaption>
+            </figure>
+            <p>A "winter wonderland" synonymous with alpine perfection, featuring the glacier-shaped Swiss Alps, crystal-clear lakes.</p>
+         </div>
+        
+         <div class="box">
+            <figure>
+                <img src="australia_page.jpg" alt="australia">
+                <figcaption>Australia</figcaption>
+            </figure>
+           <p>A massive island offering incredible diversity, from the Great Barrier Reef and white-sand beaches to the rugged Outback.</p>
+             </div>
+         <div class="box">
+            <figure>
+                <img src="iceland_page.jpg" alt="iceland">
+                <figcaption>Iceland</figcaption>
+            </figure>
+            <p>A raw, "otherworldly" landscape of volcanoes and glaciers, perfect for seeing the Northern Lights and geothermal lagoons.</p>
+         </div>
+         <div class="box">
+            <figure>
+                <img src="japan.jpg" alt="japan">
+                <figcaption>Japan</figcaption>
+            </figure>
+            <p>A mesmerizing blend of futuristic technology and ancient Zen traditions found in its neon cities and quiet temples</p>
+            </div>
+             
+            <div class="box">
+                <figure>
+                    <img src="Newyork_page.jpg" alt="newyork">
+                    <figcaption>New York</figcaption>
+                </figure>
+                <p>Known as "The City That Never Sleeps," it is the world’s premier hub for iconic skyscrapers, Broadway theatre.</p>
+                </div>
+                <div class="box">
+                    <figure>
+                        <img src="dubai.jpg" alt="dubai">
+                        <figcaption>Dubai</figcaption>
+                    </figure>
+                    <p>A futuristic desert oasis famous for record-breaking luxury, the world's tallest building, and high-end global shopping</p>
+                </div>
+                <div class="box">
+                    <figure>
+                        <img src="bali.jpg" alt="bali">
+                        <figcaption>Bali</figcaption>
+                    </figure>
+                    <p>Known as the "Island of the Gods," it is a tropical sanctuary famous for its lush rice terraces, spiritual Hindu temples.</p>
+                </div>   
+         </div>
+    </main>
+    <footer>
+         <h3>Explore the destinations you saw on our homepage.
+          Click below to dive deeper and plan your perfect trip!</h3>
+         <a href="login.html">Click Here</a>
+    </footer>
+</body>
+</html>

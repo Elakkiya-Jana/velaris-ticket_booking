@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Velaris</title>
+     <link rel="icon" href="globe.jpg"width="50">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+         background: linear-gradient(to right,rgb(243, 179, 189),rgb(132, 247, 132),#9fc0ed);
+    }
+    
+    header{
+        text-align: center;
+        
+    }
+    
+    h3{ 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+    h1{
+        padding-top: 1rem;
+        font-size: 3rem;
+
+    }
+    header h2{
+        position: fixed;
+        top: 0;
+        background-color: rgb(243, 111, 191);
+        padding: 0.5rem;
+        border: 5px solid rgb(248, 8, 224);
+        border-radius: 0 1rem 0 1rem;
+        margin-top: 3rem;
+    }
+    figure{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+    main{
+        text-align: center;
+    }
+    .box{
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 70px;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-left: 2rem;
+    }
+    .images{
+        padding: 1rem;
+        background: linear-gradient(to right,#232526,#434245);
+        color: aliceblue;
+    }
+    .image{
+         display: inline-block;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        
+    }
+    .hotel ul{
+        display: inline-block;
+        margin: 2rem;
+        padding: 1rem;
+        list-style: none;
+        margin-left: 8rem;
+        font-size: 1rem;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    .hotel p{
+        width: 200px;
+    }
+    .hotel h1{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+.flight{
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("switerland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+
+.flight-map{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.route{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+
+.plane{
+    position: absolute;
+    width: 40px;
+    animation: flyCurve 6s linear infinite;
+}
+
+
+@keyframes flyCurve{
+    0%{
+        left: 10%;
+        top: 70%;
+    }
+    25%{
+        left: 30%;
+        top: 55%;
+    }
+    50%{
+        left: 50%;
+        top: 40%;
+    }
+    75%{
+        left: 70%;
+        top: 30%;
+    }
+    100%{
+        left: 90%;
+        top: 20%;
+    }
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+
+.label{
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.india{
+    top: 75%;
+    left: 10%;
+}
+
+.mid{
+    top: 45%;
+    left: 50%;
+}
+.mid2{
+    top:30%;
+    left:70%;
+}
+
+.swiss{
+    top: 20%;
+    left: 90%;
+}
+.flight h2{
+    padding: 2rem;
+}
+.flight h1{
+    padding: 1rem;
+}
+.flight a{
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #a4c4f1;
+}
+</style>
+<body>
+    <header>
+    <h1>VELARIS</h1>
+    <h1>Switzerland</h1>
+    <h2><i>VELARIS</i></h2>
+    <h3>A "winter wonderland" synonymous with alpine perfection, featuring the glacier-shaped Swiss Alps, crystal-clear lakes, and world-class luxury.</h3>
+    <section class="time">
+<h3>Best Time to Visit</h3>
+
+<p>🌸 Spring (April – June): Pleasant weather and blooming landscapes</p>
+<p>☀️ Summer (July – September): Best for travel and outdoor activities</p>
+<p>❄️ Winter (December – February): Snow, skiing, and winter wonderland</p>
+
+</section>
+        <div class="container">
+            <nav>
+                <a href="#hotel">
+         <div class="box">
+            <figure>
+              <img src="hotel.png"width=30px>
+              <figcaption>HOTEL</figcaption>
+              </figure>
+              </a>
+         </div>
+         <a href="#flight">
+         <div class="box">
+              <figure>
+               <img src="flight.webp"width=30px>
+               <figcaption>FLIGHT</figcaption>
+               </figure>
+               </a>
+         </div>
+         </nav>
+         </div>
+          </header>
+         <hr>
+         <main>
+         <div class="images">
+            <div class="image">
+                <figure>
+                    <img src="1.Zermatt.jpg" alt="Zermatt"width="300px">
+                    <figcaption>Zermatt</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="2_Interlaken.jpg" alt="Interlaken"width="300px">
+                    <figcaption>Interlaken</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="3_Lucerne.jpg" alt="Lucerne"width="300px">
+                    <figcaption>Lucerne</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                   <figure>
+                    <img src="4_Jungfraujoch.jpg" alt="Jungfraujoch"width="300px">
+                    <figcaption>Jungfraujoch</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                  <figure>
+                    <img src="5_Zurich.jpg" alt="Zurich"width=300px>
+                    <figcaption>Zurich</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                 <figure>
+                    <img src="6_Lauterbrunnen.jpg"alt="Lauterbrunnen"width="300px">
+                    <figcaption>Lauterbrunnen</figcaption>
+                </figure>
+            </div>
+         </div>
+    </main>
+    <hr>
+    <footer>
+       <section id="hotel">
+         <div class="hotel">
+            <h1>HOTELS IN SWITZERLAND</h1>
+           <ul>📍 Zermatt<br>
+            <p>Book here for a car-free, high-end alpine experience where almost every balcony offers a front-row seat to the iconic Matterhorn.</p>
+            <li>🏨 Grand Hotel Zermatterhof – Luxury stay</li>
+            <li>🏨 Mont Cervin Palace – Premium comfort</li>
+            <li>🏨 Monte Rosa – Historic stay</li>
+           </ul>
+           <ul>📍 Interlaken<br>
+            <p>Choose this as your central basecamp if you want the best transport links to lakes and mountains, plus the widest variety of hostels and grand hotels.</p>
+             <li>🏨 Victoria-Jungfrau – Luxury stay</li>
+            <li>🏨 Beau Rivage – Premium comfort</li>
+             <li>🏨 Hotel Interlaken – Budget stay</li>
+            </ul>
+            <ul>📍 Lucerne<br>
+                <p>Stay here to immerse yourself in medieval lakeside charm, with boutique hotels tucked into cobblestone streets just steps from the Chapel Bridge.</p>
+             <li>🏨 Hotel Schweizerhof Luzern – Luxury stay</li>
+             <li>🏨 Grand Hotel National – Premium comfort</li>
+              <li>🏨 ibis Styles Luzern City – Budget stay</li>
+            </ul>
+            <ul> Jungfraujoch<br>
+                <p>While you can't stay on the peak, book a hotel in nearby Wengen or Grindelwald for early-morning access to the "Top of Europe" before the crowds arrive.</p>
+                
+                <li>📍 Kleine Scheidegg<br>
+                     🏨 Hotel Bellevue des Alpes – Scenic mountain stay
+                   </li>
+               <li>📍 Wengen<br>
+                     🏨 Hotel Edelweiss Wengen – Budget + mountain view
+                   </li>
+                <li>📍 Grindelwald<br>
+                     🏨 Sunstar Hotel Grindelwald – Comfortable stay
+                    </li>
+                </ul>
+                <ul>
+                   📍 Zurich<br>
+                   <p>Look for hotels in the Altstadt (Old Town) to blend luxury lakeside living with easy access to world-class dining and the main train station.</p>
+                    <li>🏨 Baur au Lac – Luxury stay</li>
+                     <li>🏨 Hotel Schweizerhof Zurich – Premium comfort</li>
+                     <li>🏨 ibis Zurich City West – Budget stay</li>
+                </ul>
+                <ul>📍 Lauterbrunnen<br>
+                    <p>Book a room in this valley to wake up to the sound of waterfalls crashing down limestone cliffs right outside your window</p>
+                    <li>🏨 Hotel Staubbach – Scenic stay</li>
+                    <li>🏨 Hotel Silberhorn – Premium comfort</li>
+                    <li>🏨 Valley Hostel – Budget stay</li>
+                </ul>
+         </div>
+         </section>
+         
+                <div class="flight" id="flight">
+    <h1>✈️ Flight Route</h1>
+    <h2>India ➡️ Middle East ➡️ Switzerland</h2>
+    <p><b>Departure:</b> Chennai, India</p>
+<p><b>Arrival:</b> Zurich, Switzerland</p>
+<p><b>Duration:</b> 10–12 hours</p>
+<p><b>Route:</b> India → Middle East → Europe → Switzerland</p>
+
+    <div class="flight-map">
+        <div class="route"></div>
+
+        <img src="flight.webp" class="plane">
+
+        <div class="label india">India</div>
+        <div class="label mid">Middle East</div>
+        <div class="label swiss">Switzerland</div>
+       
+    </div>
+     <a href="booking.html">BOOK NOW</a>
+</div>
+
+    </footer>
+</body>
+</html>
